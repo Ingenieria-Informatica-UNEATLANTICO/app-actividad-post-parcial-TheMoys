@@ -1,0 +1,61 @@
+@startuml
+
+hide circle
+
+class "Ruta1:Ruta" as ruta1 {
+    Estado: "Activa"
+    Puntualidad: "Retrasado"
+    Nombre: "13-Lluja"
+    Destino: "Lluja"
+}
+
+class "Transporte1:Transporte" as transporte1 {
+    Capacidad: 100
+    Modelo: "XW100"
+    Asientos: 55
+    Tipo: "Autobús"
+}
+
+class "Tarifa1:Tarifa" as tarifa1 {
+    Costo: 1.30
+    Tipo: "Tarifa Bus Estándar"
+}
+
+class "Parada1:Parada" as parada1 {
+    Nombre: "Manuel Llanos"
+    Número: 17
+    Correspondencias: ["1-PCTCAN", "12-Carrefour"]
+}
+
+class "Abono1:Abono" as abono1 {
+    Tipo: "Trimestral Joven"
+    Inicio: "2024-01-01"
+    Expiración: "2024-03-31"
+}
+
+class "Abono2:Abono" as abono2 {
+    Tipo: "Especial conductor"
+    Inicio: "2024-01-01"
+    Expiración: "2025-01-01"
+}
+
+class "Pasajero1:Pasajero" as pasajero1 {
+    Nombre: "Diego Moys"
+    SaldoAbono: 50.0
+}
+
+class "Conductor1:Conductor" as conductor1 {
+    Nombre: "Juan Toca"
+    Licencia: "C123456"
+    Turno: "Mañana"
+}
+
+transporte1 --> ruta1 : Pertenece
+transporte1 --> parada1 : Llega
+transporte1 --> tarifa1 : Aplica
+pasajero1 --> transporte1 : Viaja
+conductor1 --> transporte1 : Conduce
+pasajero1 --> abono1 : Posee
+conductor1 --> abono2 : Posee
+
+@enduml

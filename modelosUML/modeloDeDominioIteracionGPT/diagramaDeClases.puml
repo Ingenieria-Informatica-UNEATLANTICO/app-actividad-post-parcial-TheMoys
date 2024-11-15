@@ -1,0 +1,43 @@
+@startuml
+
+hide empty members
+hide circle
+
+class Ayuntamiento
+
+class Incidencia
+
+class Tarifa
+
+class Transporte
+
+class Ruta
+
+class Parada
+
+class Horario
+
+class Conductor
+
+class Pasajero
+
+class Abono
+
+Ayuntamiento --> Tarifa : Define
+Ayuntamiento --> Horario : Gestiona
+Ayuntamiento --> Abono : Administra
+Ayuntamiento -r-> Incidencia: Gestiona
+
+Ruta -r-> Parada : Se compone
+Ruta --> Horario : Define
+
+Parada --> Horario : Tiene
+Transporte --> Ruta : Pertenece
+Transporte --> Tarifa : Aplica
+
+Conductor --> Transporte : Conduce
+Pasajero --> Transporte : Viaja
+Pasajero --> Abono : Posee
+Abono ..> Tarifa : Subsidia
+
+@enduml
