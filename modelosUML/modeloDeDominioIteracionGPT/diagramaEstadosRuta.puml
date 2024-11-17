@@ -1,0 +1,10 @@
+@startuml
+[*] --> En_planificacion
+
+En_planificacion --> Activa : Ruta aprobada
+Activa --> Modificada : Actualizacion de paradas
+Modificada --> Activa : Validacion completada
+Activa --> Eliminada : Eliminada del sistema
+
+Eliminada --> [*]
+@enduml

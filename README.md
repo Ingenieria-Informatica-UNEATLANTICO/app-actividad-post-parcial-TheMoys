@@ -20,6 +20,10 @@ La primera iteración del modelo de dominio se realizó durante el parcial sin a
 [Diagrama de Objetos](modelosUML/modeloDeDominioExamenParcial/diagramaObjetos.puml)
 
 ![Diagrama de Objetos](images/diagramaObjetosParcial.svg)
+####
+[Diagrama de Estados](modelosUML/modeloDeDominioExamenParcial/diagramaEstados.puml)
+
+![Diagrama de Estados](images/diagramaEstadosParcial.svg)
 
 ### Iteración con Inteligencia Artificial
 
@@ -29,7 +33,18 @@ La segunda iteración del modelo de dominio, realizada con la ayuda de inteligen
 [Diagrama de Clases](modelosUML/modeloDeDominioIteracionGPT/diagramaDeClases.puml)
 
 ![Diagrama de Clases](images/diagramaClasesIteracionGPT.svg)
-##### 
+
+#### 
 [Diagrama de Objetos](modelosUML/modeloDeDominioIteracionGPT/diagramaObjetos.puml)
 
 ![Diagrama de Objetos](images/diagramaObjetosIteracionGPT.svg)
+
+#### 
+[Diagrama de Estados del Transporte](modelosUML/modeloDeDominioIteracionGPT/diagramaEstadosTransporte.puml)
+
+![Diagrama de Estados](images/diagramaEstadosTransporte.svg)
+
+#### 
+[Diagrama de Estados de la Ruta](modelosUML/modeloDeDominioIteracionGPT/diagramaEstadosRuta.puml)
+
+![Diagrama de Estados](images/diagramaEstadosRuta.svg)
