@@ -20,10 +20,6 @@ La primera iteración del modelo de dominio se realizó durante el parcial sin a
 [Diagrama de Objetos](modelosUML/modeloDeDominioExamenParcial/diagramaObjetos.puml)
 
 ![Diagrama de Objetos](images/diagramaObjetosParcial.svg)
-####
-[Diagrama de Estados](modelosUML/modeloDeDominioExamenParcial/diagramaEstados.puml)
-
-![Diagrama de Estados](images/diagramaEstadosParcial.svg)
 
 ### Iteración con Inteligencia Artificial
 
