@@ -1,53 +1,46 @@
-# Repo plantilla para exámenes [PRG*x*|EDA*x*|IDSW*x*]@gII.uneatlantico
+# Proyecto de Modelos de Dominio
 
-*Este documento es una guía para la realización y entrega de las evaluaciones en las asignaturas PRGx, EDAx e IDSWx del Grado en Ingeniería Informática. Detalla la estructura del repositorio de entrega, los artefactos requeridos y los criterios de evaluación.*
+Autor: Diego Moys
 
-## Enunciado del examen
+## Descripción del Dominio
 
-En el repo de la asignatura, carpeta `/evaluaciones`, apartado del examen correspondiente.
+Este proyecto se centra en el modelado del dominio del transporte público de una ciudad. El objetivo es representar las entidades y relaciones clave dentro del sistema de transporte público.
 
-### Retos
+## Modelos de Dominio
 
-Indicados dentro del enunciado del examen.
+### Primera Iteración
 
-## Entrega del examen
+La primera iteración del modelo de dominio se realizó durante el parcial sin ayuda de IA, es meramente conceptualización y abstracción a ojo. Esta iteración incluye los siguientes diagramas:
 
-En el repositorio destinado para tal fin en el examen.
+####
+[Diagrama de Clases](modelosUML/modeloDeDominioExamenParcial/diagramaClases.puml)
 
-### Artefactos
+![Diagrama de Clases](images/diagramaClasesParcial.svg)
+####
+[Diagrama de Objetos](modelosUML/modeloDeDominioExamenParcial/diagramaObjetos.puml)
 
-A continuación una lista de artefactos que habitualmente constituyen la entrega de un examen:
+![Diagrama de Objetos](images/diagramaObjetosParcial.svg)
 
-||||
-|-|-|-|
-|1|Archivo **README.md**|**Este archivo**, sobreescrito con su presentación de la propuesta de solución al examen.|
-|2|Código fuente|Proyecto ordenado dentro de la carpeta `/src`.|
-|3|Diagramas UML|Archivos fuente en la carpeta `/modelosUML`.|
-| ||Diagramas exportados en formato .svg en la carpeta `/images`. |
-|4|Imágenes|Si considera necesario incluir imágenes además de los diagramas, deben alojarse en la carpeta `/images` y estar referenciadas en el documento de entrega.|
-| ||Para diagramas use el formato .svg y para imágenes comunes, el formato .png.|
-|5|Documentación adicional|En la carpeta `/documents`.|
+### Iteración con Inteligencia Artificial
 
-### Qué se debe entregar
+La segunda iteración del modelo de dominio, realizada con la ayuda de inteligencia artificial, es una mejora al modelo de dominio previamente visto. Esta iteración incluye los siguientes diagramas:
 
-- Los artefactos a entregar se indican en el examen de modo específico. Se especificará cuales son obligatorios.
-- Usted tiene la libertad de decidir si incluir o no los elementos que no sean explícitamente requeridos en el enunciado del examen. Su inclusión es facultativa y debe basarse en su criterio sobre la relevancia o aporte que estos elementos puedan tener para el trabajo presentado.
-- Todos los artefactos han de quedar adecuadamente relacionados desde el artefacto 1.
+#### 
+[Diagrama de Clases](modelosUML/modeloDeDominioIteracionGPT/diagramaDeClases.puml)
 
-## Se valorará
+![Diagrama de Clases](images/diagramaClasesIteracionGPT.svg)
 
-- Proceso de creación.
-- Exactitud en la solución.
-- Adecuado reparto de responsabilidades.
-- Código limpio.
-- Claridad del código.
-- Gestión de estados.
-- Y, por supuesto, el uso de los temas vistos en clase.
+#### 
+[Diagrama de Objetos](modelosUML/modeloDeDominioIteracionGPT/diagramaObjetos.puml)
 
-### Se propone/sugiere
+![Diagrama de Objetos](images/diagramaObjetosIteracionGPT.svg)
 
-|||
-|-|-|
-|Planificación| Planifique su enfoque utilizando diagramas, esquemas, estados y/o pseudocódigo. Lo puede aportar en su repo, como diagrama o como imagen (foto), en la carpeta adecuada y enlazado desde el README.md|
-|Documentación|En dicho README.md puede explicar cómo cada parte contribuye a la solución general. Y como hemos debatido ampliamente, evite los comentarios a su código: ¡que el código se autoexplique!.|
-|Delegación de responsabilidades|Dedíquele un momento a reflexionar sobre cómo reparte las responsabilidades entre los diferentes artefactos y cómo esto afecta la claridad y eficiencia de su solución.|
+#### 
+[Diagrama de Estados del Transporte](modelosUML/modeloDeDominioIteracionGPT/diagramaEstadosTransporte.puml)
+
+![Diagrama de Estados](images/diagramaEstadosTransporte.svg)
+
+#### 
+[Diagrama de Estados de la Ruta](modelosUML/modeloDeDominioIteracionGPT/diagramaEstadosRuta.puml)
+
+![Diagrama de Estados](images/diagramaEstadosRuta.svg)

@@ -1,0 +1,12 @@
+@startuml
+[*] --> En_reposo
+
+En_reposo --> En_ruta : Inicia operación
+En_ruta --> En_mantenimiento : Avería detectada
+En_mantenimiento --> En_reposo : Mantenimiento completado
+En_reposo --> Retirado : Fin de vida útil
+En_ruta --> Retirado : Fin de vida útil
+En_mantenimiento --> Retirado : Fin de vida útil
+
+Retirado --> [*]
+@enduml
